@@ -1,0 +1,29 @@
+1_Como Jogador quero receber 3 cartas , podendo ver o naipe e o simbolo delas
+
+	Adicionar 3 cartas ao jogador
+	Exibir na tela por meio de um texto o naipe e o sibolo de cada uma 	
+	
+2_Como Jogador quero escolher qual das minhas cartas utilizar em cada rodada da mao 
+
+	Exibir uma opcao para o Jogador escolher qual cara utilizar na rodada
+
+3_Como Jogador quero ver as cartas utilizadas em cada rodada por cada Jogador
+
+	Exibir o nome do jogador e sua carta utilizada por meio de texto
+	Exibir qual rodada tais cartas foram utilizadas
+	
+4_Como Jogador quero poder pedir TRUCO a qualquer momento da mao
+
+	Exibir uma opcao para o Jogador pedir TRUCO
+	Exibir para o Jogador um aviso sempre que a mao estiver em TRUCO
+
+5_Como Jogador quero escolher se aceito um pedido de TRUCO ou nao
+
+	Exibir uma mensagem para o Jogador caso o adversario pedir TRUCO
+	Exibir uma opcao para o jogador aceitar ou nao o pedido
+
+6_Como Jogador quero ter acesso ao placar de pontos 
+
+	Exibir o placar de pontos do jogo a cada mao por meio de texto
+	Exibir uma mensagem caso falte 2 pontos para o Jogador vencer ou perder o jogo
+
