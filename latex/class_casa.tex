@@ -1,0 +1,140 @@
+\doxysection{Casa Class Reference}
+\hypertarget{class_casa}{}\label{class_casa}\index{Casa@{Casa}}
+Inheritance diagram for Casa\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_casa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_casa_ac756d38d87665774d8225cf124721a49}\label{class_casa_ac756d38d87665774d8225cf124721a49} 
+{\bfseries Casa} (std\+::string t, std\+::string l, std\+::string b, std\+::string cep, std\+::string c, int n, double v, char tN, int p, int q, double aT, double aC)
+\item 
+int \mbox{\hyperlink{class_casa_a9fbc6311e426362b62ff8149df48b491}{get\+Pavimentos}} ()
+\item 
+int \mbox{\hyperlink{class_casa_a1526ac3cec7c5f9363c83a84906c64e8}{get\+Quartos}} ()
+\item 
+double \mbox{\hyperlink{class_casa_a6fbebc5544df3dda4c432b72c8843e5b}{get\+Area\+Terreno}} ()
+\item 
+double \mbox{\hyperlink{class_casa_addb3f107c20d2f4e7651040fbf59a06e}{get\+Area\+Construida}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_imovel}{Imovel}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries get\+Tipo\+Imovel} ()
+\item 
+void {\bfseries set\+Titulo} (std\+::string t)
+\item 
+std\+::string {\bfseries get\+Titulo} ()
+\item 
+void {\bfseries set\+Valor} (double v)
+\item 
+double {\bfseries get\+Valor} ()
+\item 
+char {\bfseries get\+Tipo\+Negocio} ()
+\item 
+std\+::string {\bfseries get\+Endereco} ()
+\item 
+std\+::string {\bfseries get\+Logradouro} ()
+\item 
+std\+::string {\bfseries get\+Bairro} ()
+\item 
+std\+::string {\bfseries get\+Cidade} ()
+\item 
+std\+::string {\bfseries get\+CEP} ()
+\item 
+int {\bfseries get\+Numero} ()
+\item 
+virtual int {\bfseries get\+Pavimentos} ()
+\item 
+virtual int {\bfseries get\+Quartos} ()
+\item 
+virtual double {\bfseries get\+Area\+Terreno} ()
+\item 
+virtual double {\bfseries get\+Area\+Construida} ()
+\item 
+virtual int {\bfseries get\+Andar} ()
+\item 
+virtual int {\bfseries get\+Vagas\+Garagem} ()
+\item 
+virtual double {\bfseries get\+Area} ()
+\item 
+virtual void {\bfseries set\+Valor\+Condominio} (double vC)
+\item 
+virtual double {\bfseries get\+Valor\+Condominio} ()
+\item 
+virtual std\+::string {\bfseries get\+Posicao} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_imovel}{Imovel}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries titulo}
+\item 
+std\+::string {\bfseries logradouro}
+\item 
+std\+::string {\bfseries bairro}
+\item 
+std\+::string {\bfseries CEP}
+\item 
+std\+::string {\bfseries cidade}
+\item 
+int {\bfseries tipo\+Imovel}
+\item 
+int {\bfseries numero}
+\item 
+double {\bfseries valor}
+\item 
+char {\bfseries tipo\+Negocio}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_casa_addb3f107c20d2f4e7651040fbf59a06e}\label{class_casa_addb3f107c20d2f4e7651040fbf59a06e} 
+\index{Casa@{Casa}!getAreaConstruida@{getAreaConstruida}}
+\index{getAreaConstruida@{getAreaConstruida}!Casa@{Casa}}
+\doxysubsubsection{\texorpdfstring{getAreaConstruida()}{getAreaConstruida()}}
+{\footnotesize\ttfamily double Casa\+::get\+Area\+Construida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_imovel}{Imovel}}.
+
+\Hypertarget{class_casa_a6fbebc5544df3dda4c432b72c8843e5b}\label{class_casa_a6fbebc5544df3dda4c432b72c8843e5b} 
+\index{Casa@{Casa}!getAreaTerreno@{getAreaTerreno}}
+\index{getAreaTerreno@{getAreaTerreno}!Casa@{Casa}}
+\doxysubsubsection{\texorpdfstring{getAreaTerreno()}{getAreaTerreno()}}
+{\footnotesize\ttfamily double Casa\+::get\+Area\+Terreno (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_imovel}{Imovel}}.
+
+\Hypertarget{class_casa_a9fbc6311e426362b62ff8149df48b491}\label{class_casa_a9fbc6311e426362b62ff8149df48b491} 
+\index{Casa@{Casa}!getPavimentos@{getPavimentos}}
+\index{getPavimentos@{getPavimentos}!Casa@{Casa}}
+\doxysubsubsection{\texorpdfstring{getPavimentos()}{getPavimentos()}}
+{\footnotesize\ttfamily int Casa\+::get\+Pavimentos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_imovel}{Imovel}}.
+
+\Hypertarget{class_casa_a1526ac3cec7c5f9363c83a84906c64e8}\label{class_casa_a1526ac3cec7c5f9363c83a84906c64e8} 
+\index{Casa@{Casa}!getQuartos@{getQuartos}}
+\index{getQuartos@{getQuartos}!Casa@{Casa}}
+\doxysubsubsection{\texorpdfstring{getQuartos()}{getQuartos()}}
+{\footnotesize\ttfamily int Casa\+::get\+Quartos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_imovel}{Imovel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Casa.\+h\item 
+Casa.\+cpp\end{DoxyCompactItemize}
