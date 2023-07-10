@@ -2,6 +2,7 @@
 #include "Casa.h"
 #include "Apartamento.h"
 #include "Terreno.h"
+#include "Especular.h"
 #include <vector>
 #include <fstream>
 #include <sstream>
@@ -17,7 +18,8 @@ void MenuPrincipal() {
     cout << "\t\t [4] Editar imovel" << endl;
     cout << "\t\t [5] Remover imovel" << endl;
     cout << "\t\t [6] Salvar dados" << endl;
-    cout << "\t\t [7] Sair" << endl;
+    cout << "\t\t [7] Especular imovel" << endl;
+    cout << "\t\t [8] Sair" << endl;
     cout << "==================================================================================" << endl;
 }
 
@@ -61,6 +63,16 @@ void MenuEdita2() {
     cout << "\t\t [1] Editar titulo do imovel" << endl;
     cout << "\t\t [2] Editar valor do imovel" << endl;
     cout << "\t\t [3] Editar valor do condominio" << endl;
+    cout << "==================================================================================" << endl;
+}
+
+void MenuBairros() {
+    cout << "==================================================================================" << endl;
+    cout << "\t\t [1] Zona Periferica" << endl;
+    cout << "\t\t [2] Zona Emergente" << endl;
+    cout << "\t\t [3] Centro Comercial Periferico" << endl;
+    cout << "\t\t [4] Centro Da Cidade" << endl;
+    cout << "\t\t [5] Zona Nobre" << endl;
     cout << "==================================================================================" << endl;
 }
 
@@ -763,9 +775,9 @@ int main()
     while (1)
     {
         unsigned int tamanho, indice;
-        int opcao, tipoImovel, tipoBusca;
+        int opcao, tipoImovel, tipoBusca, terreno, areaconstruida, pavimentos, garagens, quartos, tipobairro, final;
         string bairro, cidade, titulo, novoTitulo;
-        double preco, novoValor, novoValorCond;
+        double preco, novoValor, novoValorCond, base;
         char tipoNegocio;
 
         MenuPrincipal();
@@ -1036,6 +1048,33 @@ int main()
             break;
 
         case 7:
+            cout << "\t\t Tamanho do terreno: ";
+            cin >> terreno;
+            cout << "\t\t Area construida por pavimento: ";
+            cin >> areaconstruida;
+            cout << "\t\t Numero de pavimentos: ";
+            cin >> pavimentos;
+            cout << "\t\t Vagas de garagem: ";
+            cin >> garagens; 
+            cout << "\t\t Quantidade de quartos: ";
+            cin >> quartos;
+            
+            base = precobase(terreno, areaconstruida, garagens, quartos, pavimentos);
+            cout << endl;
+
+            MenuBairros();
+            cout << "\t\t Digite uma opcao: ";
+            cin >> tipobairro;
+            cout << endl;
+
+            final = precobairro(tipobairro, base);
+
+            cout << "\t\t Valor sugerido para venda: " << final << endl;
+            cout << "\t\t Valor sugerido para aluguel entre: " << final*0.001 << " e " << final*0.0015 << endl;
+
+            break; 
+
+        case 8:
             return 0;
 
         default:
@@ -1050,4 +1089,3 @@ int main()
 
     return 0;
 }
-
